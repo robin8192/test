@@ -16,9 +16,10 @@ String FOUND_ROLE
 
 while (NO_ERROR) {
      try {
-        FOUND_ROLE = ""${"ROLE" + ${i}}""
-
+        FOUND_ROLE = '${' + 'ROLE' + i + '}'
+       echo "Found: ${FOUND_ROLE}"
        echo FOUND_ROLE
+
      }
      catch(e){
        echo "oh no: " + e
