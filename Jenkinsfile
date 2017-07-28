@@ -12,7 +12,7 @@ echo "job: ${env.JOB_NAME}"
 
 echo "Start"
 echo env.ROLE1
-echo "hello ${'env.ROLE2'}"
+echo "hello ${env.ROLE2}"
 
 
 
