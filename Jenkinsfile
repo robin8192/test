@@ -12,7 +12,7 @@ def NO_ERROR = true
 
 while (NO_ERROR) {
      try {
-       echo ""${ROLE"${i}"}""
+       echo ROLE1
      }
      catch(e){
        echo "oh no: " + e
