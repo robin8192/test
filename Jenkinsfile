@@ -1,8 +1,8 @@
-load %WORKSPACE%\\testpipeline@script\\vars.txt
+load ${env.WORKSPACE}/${env.JOB_NAME}@script/vars.txt
 
 echo ${env.TEST123}
 echo ${TEST123}
-echo "job: ${env.JENKINS_JOB}"
+echo "job: ${env.JOB_NAME}"
 
 node {
     print ${env.TEST123}
