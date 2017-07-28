@@ -16,9 +16,9 @@ ROLE3 = "Role_3"
 echo "job: ${env.JOB_NAME}"
 
 echo "Start"
-STR = "ROLE" + "2"
+str = "ROLE" + "2"
 echo "${ROLE2}"
-echo "${STR}"
+echo "${"""${str}"""}"
 
 
 
