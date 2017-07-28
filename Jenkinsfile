@@ -4,7 +4,7 @@ node {
 load "${env.WORKSPACE}@script\\vars.txt"
 
 echo "${env.TEST123}"
-echo "${TEST123}"
+echo "${VAR_A}"
 echo "job: ${env.JOB_NAME}"
 
 
