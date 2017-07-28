@@ -1,4 +1,4 @@
-load ${env.WORKSPACE}/${env.JOB_NAME}@script/vars.txt
+load "${env.WORKSPACE}/${env.JOB_NAME}@script/vars.txt"
 
 echo ${env.TEST123}
 echo ${TEST123}
