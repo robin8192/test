@@ -17,8 +17,7 @@ echo "job: ${env.JOB_NAME}"
 
 echo "Start"
 echo ROLE[1]
-i = 2
-echo ROLE[i]
+
 
 
 
