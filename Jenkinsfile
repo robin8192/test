@@ -12,10 +12,8 @@ echo "job: ${env.JOB_NAME}"
 
 echo "Start"
 echo env.ROLE1
+echo "hello ${ROLE + 2}"
 
-def rol = "env.ROLE2"
-def tmp = '${' + rol + '}'
-echo "${tmp}"
 
 
 
