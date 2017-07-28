@@ -1,4 +1,4 @@
-load %WORKSPACE%\testpipeline@script\vars.txt
+load %WORKSPACE%\\testpipeline@script\\vars.txt
 
 echo ${env.TEST123}
 echo ${TEST123}
