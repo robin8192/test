@@ -10,13 +10,16 @@ echo env.TEST123
 echo "${VAR_A}"
 echo "job: ${env.JOB_NAME}"
 
+echo "Start"
+echo env.ROLE1
+
 int i = 1
 Boolean NO_ERROR = true
 String FOUND_ROLE
 
 while (NO_ERROR) {
      try {
-        FOUND_ROLE =  'ROLE' + i 
+        FOUND_ROLE =  'ROLE' + i
        echo "Found: ${env.FOUND_ROLE}"
 
 
