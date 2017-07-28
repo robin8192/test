@@ -3,7 +3,8 @@ node {
 
 //def vars = load "${env.WORKSPACE}@script\\vars.txt"
 
-String[] ROLE
+String[] ROLE = ['']
+ROLE[0] = "Role_0"
 ROLE[1] = "Role_1"
 ROLE[2] = "Role_2"
 ROLE[3] = "Role_3"
