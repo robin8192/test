@@ -4,6 +4,9 @@ node {
 load "${env.WORKSPACE}@script\\vars.txt"
 
 echo "${env.TEST123}"
+echo env.TEST123
+
+
 echo "${VAR_A}"
 echo "job: ${env.JOB_NAME}"
 
@@ -12,7 +15,9 @@ def NO_ERROR = true
 
 while (NO_ERROR) {
      try {
-       echo ROLE1
+
+       ROLE = "ROLE" + i
+       echo ROLE
      }
      catch(e){
        echo "oh no: " + e
