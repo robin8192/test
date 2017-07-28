@@ -10,13 +10,13 @@ echo env.TEST123
 echo "${VAR_A}"
 echo "job: ${env.JOB_NAME}"
 
-def i = 1
-def NO_ERROR = true
+int i = 1
+Boolean NO_ERROR = true
 
 while (NO_ERROR) {
      try {
 
-       ROLE = "ROLE" + i
+       ROLE = "${ROLE" + i}"
        echo "${ROLE}"
      }
      catch(e){
