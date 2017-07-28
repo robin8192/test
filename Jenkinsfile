@@ -18,7 +18,7 @@ while (NO_ERROR) {
      try {
         FOUND_ROLE = '${' + 'ROLE' + i + '}'
        echo "Found: ${FOUND_ROLE}"
-       echo FOUND_ROLE
+       echo env.FOUND_ROLE
 
      }
      catch(e){
