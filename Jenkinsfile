@@ -12,12 +12,13 @@ echo "job: ${env.JOB_NAME}"
 
 int i = 1
 Boolean NO_ERROR = true
+String FOUND_ROLE
 
 while (NO_ERROR) {
      try {
+        FOUND_ROLE = ${"ROLE" + ${i}}
 
-       ROLE = "${ROLE" + i}"
-       echo "${ROLE}"
+       echo FOUND_ROLE
      }
      catch(e){
        echo "oh no: " + e
