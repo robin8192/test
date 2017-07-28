@@ -13,9 +13,9 @@ echo "job: ${env.JOB_NAME}"
 echo "Start"
 echo env.ROLE1
 
-def tmp = "env.ROLE2"
-echo "${tmp}"
-echo "${${tmp}}"
+def rol = "env.ROLE2"
+echo "${rol}"
+
 
 
 int i = 1
