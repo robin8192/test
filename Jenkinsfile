@@ -14,7 +14,8 @@ echo "Start"
 echo env.ROLE1
 
 def rol = "env.ROLE2"
-echo "${rol}"
+def tmp = "${rol}"
+echo "${tmp}"
 
 
 
