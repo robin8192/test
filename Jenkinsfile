@@ -3,11 +3,9 @@ node {
 
 //def vars = load "${env.WORKSPACE}@script\\vars.txt"
 
-String[] ROLE = ['']
-ROLE[0] = "Role_0"
-ROLE[1] = "Role_1"
-ROLE[2] = "Role_2"
-ROLE[3] = "Role_3"
+ROLE1 = "Role_1"
+ROLE2 = "Role_2"
+ROLE3 = "Role_3"
 
 
 //echo "${env.TEST123}"
@@ -18,7 +16,9 @@ ROLE[3] = "Role_3"
 echo "job: ${env.JOB_NAME}"
 
 echo "Start"
-echo ROLE[1]
+str = "ROLE" + "2"
+echo "${ROLE2}"
+echo "${str}"
 
 
 
