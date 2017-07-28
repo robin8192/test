@@ -8,11 +8,11 @@ env.ROLE2 = "Role_2"
 env.ROLE3 = "Role_3"
 
 
-echo "${env.TEST123}"
-echo env.TEST123
+//echo "${env.TEST123}"
+//echo env.TEST123
 
 
-echo "${VAR_A}"
+//echo "${VAR_A}"
 echo "job: ${env.JOB_NAME}"
 
 echo "Start"
