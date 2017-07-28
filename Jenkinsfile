@@ -1,7 +1,9 @@
 
 node {
 
-load "${env.WORKSPACE}@script\\vars.txt"
+def vars = load "${env.WORKSPACE}@script\\vars.txt"
+echo vars
+
 
 echo "${env.TEST123}"
 echo env.TEST123
@@ -12,7 +14,7 @@ echo "job: ${env.JOB_NAME}"
 
 echo "Start"
 echo env.ROLE1
-echo "hello ${${'env.ROLE' + '2'}}"
+echo "hello ${'env.ROLE2}"
 
 
 
