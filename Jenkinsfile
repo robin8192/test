@@ -17,7 +17,7 @@ while (NO_ERROR) {
      try {
 
        ROLE = "ROLE" + i
-       echo ROLE
+       echo "${ROLE}"
      }
      catch(e){
        echo "oh no: " + e
