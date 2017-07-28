@@ -12,8 +12,11 @@ echo "job: ${env.JOB_NAME}"
 
 echo "Start"
 echo env.ROLE1
-echo env.'ROLE' + '2'
-echo 'env.ROLE' + '3'
+
+def tmp = "env.ROLE2"
+echo ${tmp}
+echo ${${tmp}}
+
 
 int i = 1
 Boolean NO_ERROR = true
