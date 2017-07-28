@@ -1,1 +1,2 @@
 env.TEST123 = "testenvvariable123"
+VAR_A = "variable_a"
