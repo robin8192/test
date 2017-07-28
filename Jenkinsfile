@@ -16,9 +16,9 @@ String FOUND_ROLE
 
 while (NO_ERROR) {
      try {
-        FOUND_ROLE = '${' + 'ROLE' + i + '}'
+        FOUND_ROLE =  'ROLE' + i 
        echo "Found: ${env.FOUND_ROLE}"
-       
+
 
      }
      catch(e){
