@@ -7,9 +7,24 @@ echo "${env.TEST123}"
 echo "${VAR_A}"
 echo "job: ${env.JOB_NAME}"
 
-echo "${ROLE1}"
-echo "${ROLE2}"
-echo "${ROLE3}"
+def i = 1
+def NO_ERROR = true
+
+while (NO_ERROR) {
+     try {
+       echo "${ROLE${i}}"
+     }
+     catch(e){
+       echo "oh no: " + e
+       NO_ERROR = false
+     }
+     i++
+}
+
+
+// echo "${ROLE1}"
+// echo "${ROLE2}"
+// echo "${ROLE3}"
 
 
     echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
