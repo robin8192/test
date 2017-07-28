@@ -16,7 +16,7 @@ String FOUND_ROLE
 
 while (NO_ERROR) {
      try {
-        FOUND_ROLE = ${"ROLE" + ${i}}
+        FOUND_ROLE = ""${"ROLE" + ${i}}""
 
        echo FOUND_ROLE
      }
