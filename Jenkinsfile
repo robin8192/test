@@ -16,11 +16,9 @@ ROLE3 = "Role_3"
 echo "job: ${env.JOB_NAME}"
 
 echo "Start"
-str = "ROLE" + "2"
-echo "${ROLE2}"
-echo "${"""${str}"""}"
 
 
+powershell 'write-output "HI!!"'
 
 
 
